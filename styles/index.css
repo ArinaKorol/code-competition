@@ -1,0 +1,340 @@
+body{
+    margin-inline: 5rem;
+    margin-top: 2rem;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-top: 3.3rem;
+}
+
+.wrap{
+    padding-right: calc(50% - 720px);
+    padding-left: calc(50% - 720px);
+}
+
+/*header*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header button{
+    border: 1px solid #8B8B8B;
+    border-radius: 5.6rem;
+    padding: 0.6rem 1.25rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+.exit{
+    padding: 0.75rem 1.25rem
+}
+
+.account-img{
+    border: 1px solid #3D9AFF;
+    border-radius: 10rem;
+    padding: 0.65rem 0.75rem
+}
+
+.profile{
+    display: flex;
+    gap: 0.625rem;
+    align-items: center;
+    font-size: 0.825rem;
+    color: #8B8B8B;
+    width: max-content
+}
+
+.name{
+    color: black;
+    width:max-content
+}
+
+.profile-text{
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.3rem
+}
+
+.groups{
+    display: flex;
+    gap: 0.5rem;
+    line-height: 1rem;
+}
+
+.choosen-group{
+    background-color: #3D9AFF;
+    border: none;
+    box-shadow: 0rem 0.25rem 1.125rem 0rem #D0E7FF;
+    color: white
+}
+/*dropdown menu*/
+
+.menu-to-choose-group{
+    /* display: none; */
+    display: flex;
+    gap: 5px;
+    transition: all 1s ease-out;
+}
+
+.menu-icon{
+    
+    padding: 0.9rem 0.625rem;
+    display:flex;
+    
+}
+
+.menu-button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 9px 15px;
+}
+
+.tick-up{
+    display: none;
+}
+
+.menu-button:hover .tick-up{
+    display: block;
+}
+.menu-button:hover .tick-down{
+    display: none;
+}
+.menu-icon:hover .menu-button .tick-up{
+    display: block;}
+.menu-button p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.94px;
+    color: #8B8B8B;
+}
+.dropdown-menu {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Выпадающее содержимое (скрыто по умолчанию) */
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 1;
+    color:#8B8B8B;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.94px;
+    padding-top: 9px;
+    padding-right: 25px;
+    padding-bottom: 9px;
+    padding-left: 25px;
+    border-radius: 90px;
+    border: 1px solid #8B8B8B;
+    margin-top: 5px;
+}
+  
+.menu-content a {
+    display:flex;
+    align-content: center;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    color:#8B8B8B;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.94px;
+}
+
+.menu-button:hover{
+    padding-right: 15px;
+}
+
+  .dropdown-menu:hover .menu-content {display: block;}
+/*main-content*/
+
+.blue-block{
+    background-image: url(../images/blue-bg.svg);
+    box-shadow: 0rem 2.4rem 2rem -1.8rem #ACD3FF;
+    margin-bottom: 1.25rem;
+}
+
+.orange-block{
+    background-image: url(../images/orange-bg.svg);
+    box-shadow: 0rem 2.4rem 2rem -2.3rem #FF9E5A;
+    margin-bottom: 1.25rem;
+    display: grid;
+}
+
+.violet-block{
+    background-image: url(../images/violet-bg.svg);
+    box-shadow: 0rem 2.4rem 2rem -2.3rem #AA66FF;
+    margin-bottom: 1.25rem;
+}
+
+.blue-block, .orange-block, .violet-block{
+    height: 10.8rem;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0rem 1.5rem 1.5rem 1.5rem;
+}
+
+.blueblock-title, .orangeblock-title, .violetblock-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: -0.7px;
+    padding: 1.25rem 5rem 0rem 1.25rem;
+}
+
+.orangeblock-title{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.name-of-block{
+    padding: 0.625rem 1.25rem 0rem 1.25rem;
+    margin-top: 0.5rem;
+    font-weight: 400;
+    font-size: 0.825rem;
+    line-height: 1rem;
+    letter-spacing: -1px;
+}
+
+/*blue-block*/
+
+.blue-block-lower{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: max-content;
+}
+
+.chat-of-group, .material-and-homework, .recordings-of-classes{
+    border: 1px solid #DDE2E4;
+    box-shadow: 0rem 1.5rem 3.25rem -1.8rem #D3D3D3;
+    border-radius: 0rem 1.5rem 1.5rem 1.5rem;
+}
+
+.recordings-of-classes{
+    display: flex;
+}
+
+.chat-of-group, .material-and-homework{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.blue-block-button{
+    width: 3.4rem;
+    height: 3.4rem;
+    border-radius: 1.25rem;
+    box-shadow: 0rem 0.25rem 1.16rem 0rem #D0E7FF;
+    align-self: flex-end;
+    margin: 0.625rem 0.825rem 0.625rem 0rem;
+}
+
+/*orange-block*/
+
+.orange-block-button{
+    background-image: url(../images/orange-button.svg);
+    background-size: cover;
+    color: white;
+    border-radius: 20px;
+    padding: 0.625rem 1.25rem;
+    box-shadow: 0rem 0.25rem 1.125rem 0rem #FFD0B8; 
+}
+
+.value{
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.values-in-button{
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+}
+
+
+.text-under-title{
+    font-weight: 400;
+    font-size: 0.625rem;
+    line-height: 0.75rem;
+    padding: 0.6rem 1.25rem;
+}
+
+.percent-value{
+    font-weight: 500;
+}
+
+.place-in-top{
+    display: flex;
+    margin: 1.25rem;
+    gap: 0.3rem
+}
+
+.place-in-group, .place-in-rating{
+    display: flex;
+    gap: 3px;
+    align-self: flex-end;
+    font-size: 0.75rem;
+    line-height: 0.9rem;
+    font-weight: 400;
+    padding-left: 0.625rem;
+    border-radius: 5.6rem;
+    border: 1px solid #FFFFFF;
+    align-items: center;
+}
+
+.num-in-top{
+    padding: 0.625rem 0.75rem;
+    border-radius: 1.25rem;
+    background-color: white;
+    color: #FF9E5A;
+    border: none;
+}
+
+.orange-block-buttons{
+    display: flex;
+    gap: 0.3rem;
+    margin: 1.25rem;
+}
+
+.orange-block-lower{
+    display:grid;
+    gap: 0.3rem
+}
+
+.educational-rating, .activity-rating{
+    border-radius: 1.5rem;
+    border: 1px solid #DDE2E4;
+    box-shadow: 0rem 1.5rem 3.25rem -1.7rem #D3D3D3;
+}
+
+/*violet-block*/
+
+.months{
+    display: grid;
+    margin-top: 2.25rem;
+}
+
+.month{
+    width: 25.8rem;
+    height: 5.3rem;
+    border-radius: 1.25rem;
+    border: 1px solid #DDE2E4;
+    padding: 1.25rem;
+    margin-top: -1rem;
+    background-color: white;
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+    justify-content: space-between;
+}
